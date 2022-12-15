@@ -14,7 +14,8 @@ public class RobinWeapon : MonoBehaviour
         {
             GameObject newProjectile = Instantiate(projectilePrefab);
             newProjectile.transform.position = shootingStartPosition.position;
-            newProjectile.GetComponent<RobinBullet>().Initialize(transform.forward);
+            newProjectile.transform.rotation = shootingStartPosition.rotation;
+            newProjectile.GetComponent<RobinBullet>().Initialize();
         }
     }
 }

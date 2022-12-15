@@ -8,13 +8,15 @@ public class RobinBullet : MonoBehaviour
     [SerializeField] private Rigidbody projectileBody;
     [SerializeField] private GameObject damageIndicatorPrefab;
 
-    public void Initialize(Vector3 direction)
+    public void Initialize()
     {
-        projectileBody.AddForce(direction * 700f + transform.up * 300f);
+        projectileBody.AddForce(transform.forward * 2500 + transform.up * 100f);
     }
 
     private void OnCollisionEnter(Collision collision)
     {
+        GameObject damageIndicator = Instantiate(damageIndicatorPrefab);
+        damageIndicator.transform.position = collision.GetContact(0).point;
         Destroy(this.gameObject);
     }
 }
