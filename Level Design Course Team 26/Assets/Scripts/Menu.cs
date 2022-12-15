@@ -21,6 +21,7 @@ public class Menu : MonoBehaviour
     {
         SceneManager.LoadScene(1);
         Time.timeScale = 1;
+        Cursor.visible = false;
     }
 
     public void QuitGame()
@@ -45,7 +46,6 @@ public class Menu : MonoBehaviour
         {
             Time.timeScale = 0f;
             pauseMenu.SetActive(true);
-
         }
         else
         {

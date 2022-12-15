@@ -4,6 +4,15 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Start.unity
+    guid: ce6c87cf49d3701459ffa54665d858ef
+  - enabled: 1
+    path: Assets/Scenes/Level 1 - Robin.unity
+    guid: 59f83d5ca36cf454e89b103315979a6f
+  - enabled: 1
+    path: Assets/Scenes/GameOver.unity
+    guid: dc256af0e77a3b846ab2c447d14e6e62
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 9e7be553448fa2546aea5752021cbcf7, type: 2}
